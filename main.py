@@ -12,7 +12,7 @@ def main():
 #dados com pca ja aplicado
     dados.dados_pca
 #plota os dados em um grafico 3d
-    fig = px.scatter_3d(dados.dados_pca, x=0, y=1, z=2)
+    fig = px.scatter_3d(dados.dados_pca, x='PC1', y='PC2', z='PC3')
     fig.show()
 
 if __name__ == '__main__':

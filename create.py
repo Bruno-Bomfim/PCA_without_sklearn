@@ -36,4 +36,6 @@ class PCA:
     self.componentes_principais = autovetores.T[:n_pc].dot(nova_base_dados)
     # Criar dataframe dos novos dados
     self.dados_pca = pd.DataFrame(self.componentes_principais.T)
+    # Nomeia as colunas como PC1, PC2 e PC3
+    self.dados_pca.columns =  ['PC1','PC2','PC3']
     
